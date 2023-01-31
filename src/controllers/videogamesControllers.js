@@ -114,7 +114,7 @@ const findVideogame = async (name) => {
   let videogameAPI =
     await axios .get(`https://api.rawg.io/api/games?search=${name}&key=${API_KEY}&page_size=20`);
 
-  console.log(videogameAPI);
+
   const videogamesData = videogameAPI.data.results;
   videogamesData.forEach((game) => {
 
